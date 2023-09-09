@@ -59,17 +59,17 @@ export default function HomePage() {
     }
   }
 
-  const deposit = async() => {
+  const Maximum = async() => {
     if (atm) {
-      let tx = await atm.deposit(1);
+      let tx = await atm.findMax([23,45,32,11,9,5,78]);
       await tx.wait()
       getBalance();
     }
   }
 
-  const withdraw = async() => {
+  const Minimum = async() => {
     if (atm) {
-      let tx = await atm.withdraw(1);
+      let tx = await atm.findMin([23,45,32,11,9,5,78]);
       await tx.wait()
       getBalance();
     }
@@ -93,9 +93,9 @@ export default function HomePage() {
     return (
       <div>
         <p>Your Account: {account}</p>
-        <p>Your Balance: {balance}</p>
-        <button onClick={deposit}>Deposit 1 ETH</button>
-        <button onClick={withdraw}>Withdraw 1 ETH</button>
+        <p>Your Answer: {balance}</p>
+        <button onClick={Maximum}>Max element</button>
+        <button onClick={Minimum}>Min element</button>
       </div>
     )
   }
@@ -104,7 +104,8 @@ export default function HomePage() {
 
   return (
     <main className="container">
-      <header><h1>Welcome to the Metacrafters ATM!</h1></header>
+      <header><h1>Finding Maximum & Minimum Element in an Array</h1><hr></hr>
+      <h3>The array is [23,45,32,11,9,5,78]</h3></header>
       {initUser()}
       <style jsx>{`
         .container {
