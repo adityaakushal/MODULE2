@@ -1,4 +1,20 @@
-# Starter Next/Hardhat Project
+# Finding the maximum & Minimum element in an array
+
+This project is a sample overview of finding the maximum & minimum element in an array and display the result on the frontend.
+
+## Description
+
+This project contains the solidity smart contract as the backend where all the calcuations like finding the maximum and minimum elements are done and is connected to the frontend to display the result . In order to complete the process, we need to connect our wallet and pay the gas fees
+
+## Getting Started
+
+### Executing program
+
+We need to connect to hardhat network in order to deploy the contract and all the transactions are carried out in the hardhat network itself.
+
+The chain id is 31337 & symbol- ETH
+
+The rpc url is the port address of gitpod if you are using gitpod
 
 After cloning the github, you will want to do the following to get the code running on your computer.
 
@@ -10,3 +26,16 @@ After cloning the github, you will want to do the following to get the code runn
 
 After this, the project will be running on your localhost. 
 Typically at http://localhost:3000/
+
+You can then interact with the frontend in the website and get the desired results by confirming the transactions on metamask.
+
+## Author
+
+Aditya K
+
+@adityaaakushal@gmail.com
+
+## License
+
+This project is licensed under the MIT License
+
